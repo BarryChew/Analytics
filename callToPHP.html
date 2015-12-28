@@ -1,3 +1,7 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
 // handles the click event for link 1, sends the query
 function getOutput() {
   getRequest(
@@ -49,3 +53,10 @@ function getRequest(url, success, error) {
     req.send(null);
     return req;
 }
+</script>
+</head>
+<body>
+<a href="#" onclick="return getOutput();"> test </a>
+<div id="output">waiting for action</div>
+</body>
+</html>
